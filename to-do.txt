@@ -1,7 +1,7 @@
  - Create the icon for website
  - Add the icon for the website
  - Add a section for Experience
- - Add Details on the home page
+
  - Add Projects
 
 
@@ -12,3 +12,8 @@
  Note -
 
   The project for Experience section comes in the that section and don't add that to bottom list (Debatable).
+
+
+
+Done -
+   - Add Details on the home page
