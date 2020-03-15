@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta  charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title> DevFiroda Portfolio</title>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/firoda.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/firoda.png" alt="Firoda">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section class="intro" >
+      <h1 class="section__title section__title--intro">
+        <strong> Search Algorithms Used by<br> Browsers and Databases</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">C++, Data Structure and Algorithms</p>
+      <img src="img/dsa01.png" alt="A picture of me smiling" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>In this project, I tried to depict the algorithms used by browsers and ms word to find a word in a large text input data. The input data we are using is a novel named “the kite runner” by Khaled Hosseini. There are many types of algorithms and data structures used for this purpose only. We are depicting an inverted index data structure, boyer Moore search algorithm, and Rabin-Karp search algorithm.</p>
+
+
+      <p>Things I implemented for this project - <br>
+          1) SEARCH USING INVERTED INDEX DATA STRUCTURE AND LINKED LISTS<br>
+          2) BOYER MOORE SEARCH ALGORITHM <br>
+          3) RABIN-KARP SEARCH ALGORITHM <br>
+      </p>
+      <p>An Inverted Index is a structure used by search engines and databases to make search terms to files or documents, trading the speed writing the document to the index for searching the index later on. There are two versions of an inverted index, a record-level index which tells you which documents contain the term and a fully inverted index which tells you both the document a term is contained in and where in the file it is. </p>
+      <img src="img/dsa01.png" alt="Image of Inverted Index" title=" Image of Record Level and Full Inverted Index">
+      <p><strong> Boyer Moore Algorithm </strong> <br>
+        The main idea of Boyer-Moore in order to improve the performance are some observations of the pattern. In the terminology of this algorithm they are called good-suffix and badcharacter shifts.
+      </p>
+      <img src="img/dsa02.png" alt="" title="Unlike other algorithms the letters of the pattern are compared from right to left!">
+      <p>
+        Input:    Text with n characters and Pattern with m characters<br>
+         Output: Index of the first substring of T matching P
+      </p>
+        <img src="img/dsa03.png" alt="Boyer Moore" title="The Algorithm">
+      <p>
+        <strong>Time Complexity</strong><br>
+        Complexity is O(n). The execution time can actually be sub-linear: it doesn't need to actually check every character of the string to be searched but rather skips over some of them (check right-most character of the block of m first, if not found in pattern can skip entire rest of block). <br>
+        Best-case performance is O(n/m). In the best case, only one in m characters needs to be checked.<br>
+        Worst case complexity is O(m+n) <br><br>
+      </p>
+
+      <p><strong>Rabin–Karp algorithm </strong><br>
+        Rabin–Karp algorithm seeks to speed up the testing of equality of the pattern to the substrings in the text by using a hash function. A hash function is a function which converts every string into a numeric value, called its hash value.
+      </p>
+      <p>The key to the Rabin–Karp algorithm's performance is the efficient computation of hash values of the successive substrings of the text. The Rabin fingerprint is a popular and effective rolling hash function. The Rabin fingerprint treats every substring as a number in some base, the base being usually a large prime. For example, if the substring is "hi" and the base is 101, the hash value would be 104 × 1011 + 105 × 1010 = 10609 (ASCII of 'h' is 104 and of 'i' is 105). </p>
+      <img src="img/dsa04.png" alt="" title="">
+      <p>The essential benefit achieved by using a rolling hash such as the Rabin fingerprint is that it is possible to compute the hash value of the next substring from the previous one by doing only a constant number of operations, independent of the substrings' lengths. </p>
+      <img src="img/dsa05.png" alt="" title="">
+      <img src="img/dsa06.png" alt="" title="">
+      <p>
+        <strong>Time Complexity</strong>
+        The running time of the Rabin-Karp algorithm in the worst-case scenario is O((n-m+1)m) but it has a good average-case running time. <br>
+        If the expected number of valid shifts is small O(1) and the prime q is chosen to be quite large, then the Rabin-Karp algorithm can be expected to run in time O(n+m) plus the time to required to process spurious hits. <br>
+        
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:adtiyafiroda@gmail.com" class="footer__link">adityafiroda@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/aditya-firoda/"class="social-list__link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/Firoda"class="social-list__link"><i class="fab fa-github"></i> Github</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.facebook.com/aditya.firoda?ref=bookmarks"class="social-list__link"><i class="fab fa-facebook"></i> Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://leetcode.com/firoda/"class="social-list__link">   LeetCode</a>
+        </li>
+      </ul>
+    </footer>
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+
+
+
+
+</body>
+</html>

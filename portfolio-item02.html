@@ -17,7 +17,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-            <img src="img/firoda.png" alt="">
+            <img src="img/firoda.png" alt="Firoda">
             </a>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -35,22 +35,22 @@
 
     <section class="intro" >
       <h1 class="section__title section__title--intro">
-        <strong> Offline Map Application Based<br> on ESRI’s ArcGIS Platform  </strong>
+        <strong> Vehicle Number Plate Recognition </strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">Java, ArcGIS, Eclipse</p>
-      <img src="img/gis1.png" alt="A picture of me smiling" class="intro__img">
+      <p class="section__subtitle section__subtitle--intro">matlab</p>
+      <img src="img/imgproc1.png" alt="A picture of me smiling" class="intro__img">
     </section>
 
     <div class="portfolio-item-individual">
-      <p>During my 4 weeks of <strong>internship at DRDO</strong>, I learned how the ESRI ArcGIS platform works and how efficiently it can load a map from very massive images that otherwise would take a lot of processing if shown directly without any efficiency. The efficiency of the system lies in the fact that it breaks the data into tiles and then displays them tile by tile. </p>
+      <p>Number plate extraction is hotspot research area in the field of image processing. Many of automated system have been developed but each has its advantages and disadvantages. It is assumed the vehicle is stationary and images are captured at fixed distance.
+ </p>
 
-        <img src="img/gis2.png" alt="Image of shapefile" title="This output shows the rendering points from the shapefile in the mapView this is done by creating a shapefile feature table and then converting that shapefile feature table to featurelayer which is then added to the mapView operational layers ">
-
-      <p>The motive of my project problem statement was to apply these techniques of the platform and develop a JAVA based application that runs completely offline with the help of the ArcGIS Runtime SDK which will have some functionalities of the Original Paid Platform. </p>
-      <p>In the duration of my Internship, I had implemented several functionalities such as the display of the map from a tile package which can be added and as several of them are added together it automatically stitches them together. </p>
-      <p>My work also involved displaying the coordinates of a map point in various formats so that it can be used according to the requirements of the user. And lastly the displaying of various features from the shapefile of a point on the map.</p>
-
-
+        <img src="img/imgproc2.png" alt="Image of number plate" title=" The input number plate image">
+      <p>An automated system is developed using MATLAB in which image is captured from camera and converted in Gray scale image for pre processing. After conversion, dilation process is applied on image and unwanted holes in image have been filled.</p>
+      <p>After dilation, horizontal and vertical edge processing of has been done and passed these histograms through low pass filters. Low pass filters filter out unwanted regions or unwanted noise from image. After this filtering, image is segmented and region of interest is extracted and image is converted into binary form. Binary images are easily processed as compared to coloured images</p>
+          <img src="img/imgproc3.png" alt="Image of number plate" title=" Image after Morphological Operations">
+      <p>Binarization, each alphanumeric character on number plate is extracted and then recognized with the help of template images of alphanumeric characters. After this, each alphanumeric character is stored in file and whole number plate is extracted successfully.</p>
+          <img src="img/imgproc4.png" alt="Image of number plate" title="Output Number">
     </div>
 
     <!-- Footer -->
