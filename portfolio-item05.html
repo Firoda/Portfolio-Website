@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta  charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title> DevFiroda Portfolio</title>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/firoda.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/firoda.png" alt="">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        <strong>Improved Image Pre-Processing<br> for Sharpened Object<br> Detection in Image </strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Part of 6 month internship at DRDO</p>
+      <img src="img/gis1.png" alt="A picture of me smiling" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p><strong>Introduction</strong><br>This project primarily focuses on ways to get better object detection using deep
+                          neural networks, which will help in identifying the tanks and other armoured
+                          vehicles across different weather conditions. </p>
+      <p><strong>Objectives</strong><br>To create a model where there is Pre-Processing of the image done to improve
+            features, these Pre-Processing are removal of fog, shadows and finding the
+            dominant color to create image from basic color palette and further after the
+            Preprocessing using the image to train the best convolutional neural network
+            which detects the different vehicles across the different images with high level of
+            confidence. While creating a model from scratch is not required only that
+            find the best existing model which has least losses and trains faster on images</p>
+
+        <img src="img/ip01.png" alt="Overview of the Project" title="Workflow of the Project">
+
+    <p><strong> Section 1 - Parsing Color Pallete Library</strong>
+      The parsing was done using python library, to get the following column fields there were 1800 values -<br>
+  ➔ Color URL <br>
+  ➔ Shade Code etc</p>
+
+  <p><strong>Section 2 - Removal of Fog</strong><br>This is a new method that is based on the acute observation of images in natural settings and
+based on the observation the de-hazing of the image is done which leads to much better, clearer
+images. It arrives from the point that most pictures which capture outdoor settings have
+intensity value of at least one of RGB channels to be around zero, within the boundaries of the
+local window being considered.</p>
+    <img src="img/ip02.png" alt="Display of Fog Removal Process" title="The Resultant Image after Dark Channel Prior Technique">
+
+    <p><strong>Section 3 - Deep Learning Model</strong><br>
+      Resnet Architecture Model was trained using google dataset
+    <img src="img/ip04.png" alt="Display of Tank Detection" title="Neural Network Prediction">
+    From the figure as shown above we can see the model is easily able to detect the
+armoured vehicle shown in the image despite there being slight trace amount of
+fog in input. The model is also able to classify the object belonging to Tank class
+with a confidence score of 0.722 which is very much above the threshold of 50%
+and it shows bounding box of blue color along the length of tank which is helpful
+in cases the image is very big in length and width, also for documentation and
+analyzing purposes.
+The image takes about 7.2 seconds to process a high resolution image which is
+much better than the time taken by conventional neural networks such as VGG16
+etc.
+  
+    </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:adtiyafiroda@gmail.com" class="footer__link">adityafiroda@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/aditya-firoda/"class="social-list__link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/Firoda"class="social-list__link"><i class="fab fa-github"></i> Github</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.facebook.com/aditya.firoda?ref=bookmarks"class="social-list__link"><i class="fab fa-facebook"></i> Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://leetcode.com/firoda/"class="social-list__link">   LeetCode</a>
+        </li>
+      </ul>
+    </footer>
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+
+
+
+
+</body>
+</html>
