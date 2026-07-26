@@ -1,6 +1,18 @@
-# Portfolio-Website
+# Portfolio Website
 
-This is the repository for my portfolio website which showcases my projects. 
+Aditya Firoda's 2026 portfolio revamp: a static Vite, React, Tailwind, Motion, and Three.js site for a Builder PM profile.
 
+Live site: https://firoda.github.io/Portfolio-Website/
 
-Please go to ----------->  https://firoda.github.io/Portfolio-Website/
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+```
