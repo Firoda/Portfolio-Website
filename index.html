@@ -1,142 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta  charset="utf-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
-  <title> DevFiroda Portfolio</title>
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&display=swap" rel="stylesheet0">
-  <link rel="icon" href="img/firoda.png">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-            <img src="img/firoda.png" alt="">
-            </a>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-          <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#services" class="nav__link">Interests</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          </ul>
-        </nav>
-    </header>
-
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong> Aditya Firoda </strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">software dev</p>
-      <img src="img/cropimage01.jpg" alt="A picture of me smiling" class="intro__img">
-    </section>
-
-    <!-- My Services -->
-    <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
-    <div class="services">
-      <div class="service">
-          <h3>Design + Developement</h3>
-          <p>I have created multiple projects as part of my university curriculum. I have created social networking website and used SDKs to implement applications with graphical user interface.</p>
-        </div> <!-- / service -->
-      <div class="service">
-          <h3> Coding </h3>
-          <p>Interested in data structures and algorithms and like solving questions on multiple platforms such as LeetCode, GeeksForGeeks, Hackerrank. I have linked my profiles from different websites in the footer section.</p>
-      </div> <!-- / service -->
-      <div class="service">
-          <h3> Video Games  </h3>
-          <p>My first introduction to computer and still my favorite thing to relax at the end of the day. I like playing RPG and first-person shooting games. Massively Multiplayer Online games such as Call of Duty are now my recent favorite.</p>
-      </div> <!-- / service -->
-    </div>
-
-    <a href="#work" class="btn">My Work</a>
-    <a href="https://drive.google.com/file/d/14LjwnlwKAFvRZuHf0yVsN-FTVWgz0-aL/view?usp=sharing" class="btn">My Resume</a>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about"> Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Software Developer from VIT University</p>
-
-      <div class="about-me__body">
-        <p>Currently,I am a 4th-year student currently studing computer science in Vellore Institute of Technology, Vellore. I will be graduating in May 2020.
-           I am passionate about computers from a young age and always excited about the impact of products of technology can have on customers. My projects involve variety of topics from implementing algorithms used by browsers to detection of anomaly in datasets using random forest techniques.</p>
-        <p> I love to solve complex problems and always excited by many ways analyze the problems, the projects that I have created some as part of Team and some as a solo adventure were done from the perpespective of figuring things out myself by tinkering different parts of projects.
-            <br> CGPA: 8.89
-            <br>  Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages;  Entrepreneurship Development; Network and Communication.
-</p>
-      </div>
-
-      <img src="img/cropimage02.jpg" alt="Me Again" class="about-me__img">
-    </section>
-
-    <!-- My Work -->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work"> Projects </h2>
-      <p class="section__subtitle section__subtitle--work">A Selection of my Projects</p>
-      <div class="portfolio">
-          <a href="portfolio-item01.html" class="portfolio__item">
-            <img src="img/gis1.png" alt="ArcGIS Application" class="portfolio__img" title="Offline Map Application Based on ESRI’s ArcGIS Platform">
-          </a>
-
-          <a href="portfolio-item02.html" class="portfolio__item">
-            <img src="img/imgproc1.png" alt="Number Plate Recognition" class="portfolio__img" title="Vehicle Number Plate Recognition">
-          </a>
-
-          <a href="portfolio-item03.html" class="portfolio__item">
-            <img src="img/dsa01.png" alt="Search Algorithms used by Browsers" class="portfolio__img" title="Search Algorithms Used by Browsers and Databases">
-          </a>
-
-          <a href="#" class="portfolio__item">
-            <img src="img/iwp01.png" alt="" class="portfolio__img">
-          </a>
-          <a href="portfolio-item05.html" class="portfolio__item">
-            <img src="img/ip03.png" alt="" class="portfolio__img">
-          </a>
-
-      </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="mailto:adtiyafiroda@gmail.com" class="footer__link">adityafiroda@gmail.com</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="https://www.linkedin.com/in/aditya-firoda/"class="social-list__link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://github.com/Firoda"class="social-list__link"><i class="fab fa-github"></i> Github</a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.facebook.com/aditya.firoda?ref=bookmarks"class="social-list__link"><i class="fab fa-facebook"></i> Facebook</a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://leetcode.com/firoda/"class="social-list__link">   LeetCode</a>
-        </li>
-      </ul>
-    </footer>
-
-
-
-
-
-    <script src="js/index.js"></script>
-
-
-
-
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aditya Firoda is a Builder PM and MBA student translating technical depth into product and strategy decisions."
+    />
+    <title>Aditya Firoda | Builder PM</title>
+    <link rel="icon" href="/Portfolio-Website/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
