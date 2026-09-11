@@ -1,27 +1,34 @@
-# Aditya Firoda — Career Atlas
+# Aditya Firoda — Engineering to Product
 
-An interactive portfolio with a procedural Three.js career atlas, chronological experience, hover/tap company details, and five themed project reading views. The four original long-form articles and their screenshots are retained; the fifth item is explicitly a screenshot-only archive.
+A white, scroll-led portfolio rebuilt from the approved content master and redesign plan. Six career chapters, procedural Three.js scenes, full experience panels, five new product stories and five original project archives. The site runs as a single offline HTML file and is configured for GitHub Pages.
 
-## Run and build
+## Develop and build
 
 ```bash
-npm install
+npm ci
 npm run dev
 npm run build
 ```
 
-Open `dist/portfolio.html` directly in a browser, or serve `dist/index.html`. Both contain the complete application, Three.js, CSS, screenshots, and downloadable LinkedIn profile PDF. No network connection, external fonts, textures, or model files are needed. External social links naturally require internet access. The production artifact is about 3.9 MB; this is intentional for the single-file requirement.
+The final `dist/index.html` and identical `dist/portfolio.html` embed the complete runtime, styles, organization marks, original project screenshots and the previously published profile PDF. Open either directly, or host `dist/index.html` on GitHub Pages. No CDN, external fonts, models, API or internet connection is needed for core content. Social/contact links require the corresponding external service. The existing GitHub Pages workflow builds and publishes on a push to `main`; no deployment was performed during the rebuild.
 
-The existing Vite/React source structure and GitHub Pages base path are preserved. The build creates one JS bundle, embeds all used assets, then `scripts/standalone.mjs` inlines JS and CSS. Do not edit generated files directly.
+## Content and source
 
-## Content
+- `docs/PORTFOLIO_CONTENT.md`: approved copy and internal claim/source register.
+- `docs/PORTFOLIO_REDESIGN_PLAN.md`: research, storyboard and visual/interaction specification.
+- `docs/ASSET_SOURCES.md`: genuine logo sources and provenance.
+- `src/data/content.json`: visitor-facing chapters, full experience and new article copy. Internal source notes are deliberately not bundled.
+- `src/data/articles.js`: original project articles and embedded archive screenshots. Original slugs remain stable.
+- `src/App.jsx`: homepage, chapter navigation, native details dialog and hash-based article routes.
+- `src/components/Scene.jsx`: Three.js lighting, lifecycle and camera controls.
+- `src/components/worlds.js`: all procedural chapter models and story-beat variants.
+- `src/components/Demo.jsx`: article-specific interactive explanations.
+- `src/styles.css`: white editorial system, responsive layouts and reduced-motion styling.
 
-- `src/data/career.js`: career dates, roles, achievements, community work.
-- `src/data/articles.js`: original HTML article extraction, embedded images, archive context.
-- `src/components/CareerAtlas.jsx`: all scene geometry, lighting, camera controls and company transitions.
-- `src/App.jsx`: navigation, chapters, company panels, accessible article dialogs.
-- `src/styles.css`: responsive layout, themes, reduced-motion support.
+The four old article source HTML files and their images remain as archival inputs, not as the primary website. Unused atlas components and old career data have been removed. The private résumé drafts and strategy documents are not downloadable assets. The retained LinkedIn export is labeled “Profile PDF”.
 
-Click a company to hold its details; hover to preview; leave the selector to return the model. Drag the canvas to orbit, scroll/pinch to zoom, or use keyboard-accessible controls. The articles have shareable `#article/<slug>` URLs, Escape dismissal, native modal focus trapping, and reading progress. Reduced-motion preferences and a motion toggle are supported. Rendering pauses when the atlas is off screen.
+## Interactions
 
-See `CONTENT_REVIEW.md` for source reconciliation and outstanding source limitations. Changes have not been published.
+Native scroll advances the career story and changes the 3D model. Chapter logos provide quick navigation; hover previews the role and scene, while the full-experience action opens a persistent keyboard-accessible dialog. “Explore in 3D” explicitly enables drag rotation and scroll/pinch zoom; zoom/reset buttons and Escape are available. Leaving exploration returns to the story. Offscreen rendering pauses, device pixel ratio is capped, and motion respects the OS reduced-motion setting and the pause control.
+
+Articles use `#article/<slug>` URLs, reading progress, contextual diagrams and next-story navigation. Original technical articles and source caveats are preserved. Use the Markdown claim register for any future content expansion.
