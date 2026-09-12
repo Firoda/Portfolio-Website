@@ -1,0 +1,29 @@
+{
+  "offline-arcgis-map": [
+    "During a DRDO traineeship, I built a Java desktop application using the ArcGIS Runtime SDK to work with maps offline.",
+    "The project introduced me to an important constraint in geospatial software: large map images need a more efficient representation than loading everything at once. Tile packages made it possible to work with the map in pieces.",
+    "The application brought together map display, multiple tile packages, shapefile feature layers and coordinate inspection. A user could inspect features and view location details in different formats.",
+    "The archive includes the original map and feature-layer screenshots. The practical story is about adapting a platform’s capabilities to a focused offline workflow."
+  ],
+  "number-plate-recognition": [
+    "This MATLAB project explored a sequence of image-processing steps for extracting a vehicle’s number plate and recognizing its characters.",
+    "The pipeline converted an input image to grayscale, applied morphological processing, used edge information to isolate a region of interest and converted that region to binary form. Individual characters were then segmented and matched against templates.",
+    "The project assumed a stationary vehicle photographed at a fixed distance. That constraint matters: the archive demonstrates a pipeline under those conditions, not an unrestricted real-world recognition system.",
+    "The original images show the input, intermediate processing and final output. A step-through presentation can make each transformation easier to follow."
+  ],
+  "search-algorithms": [
+    "I explored inverted indexes, Boyer–Moore and Rabin–Karp using long-form text as the input.",
+    "An inverted index organizes where terms occur so later searches can use that structure. Boyer–Moore uses information about a pattern to skip possible positions during matching. Rabin–Karp uses rolling hashes to help compare candidate substrings.",
+    "The project’s value is in making the different approaches visible: what each method prepares, how it searches and which work it avoids or repeats.",
+    "The archive contains the original diagrams and implementation notes. A small interactive example can help readers compare the approaches without having to read a large code listing first."
+  ],
+  "image-preprocessing": [
+    "This project explored preprocessing steps intended to make images more useful for object detection. The original article describes dehazing, a color-palette workflow and a neural-network detection example.",
+    "A before-and-after presentation should show the actual source images, with captions explaining what changed. A detection output should be presented as an example result, rather than a substitute for an evaluation across a dataset.",
+    "The original article reports a 0.722 confidence score and approximately 7.2 seconds for one high-resolution example. Those values do not establish overall model accuracy or a general performance benchmark."
+  ],
+  "interactive-web-platform": [
+    "This screenshot survives from my original web portfolio. It is part of the record of my early interface work, alongside more fully documented mapping, search and image-processing projects.",
+    "The repository does not contain a complete implementation article for this project, so the archive presents the artifact without inventing a problem statement, user base or measured result."
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "chapters": [
+    {
+      "id": "isb",
+      "name": "Indian School of Business",
+      "short": "ISB",
+      "role": "PGP in Management",
+      "dates": "Apr 2026 – Apr 2027 (expected)",
+      "color": "#1565c0",
+      "title": "Learning business.\nBuilding along the way.",
+      "intro": "At ISB, I’m combining management education with hands-on product building and technology-community work.",
+      "beats": [
+        [
+          "Bringing people together around technology.",
+          "As Tech Coordinator of the Business Technology Club, I’ve conducted more than 15 workshops involving over 20 alumni and engaging more than 300 students.",
+          "15+",
+          "workshops · 20+ alumni · 300+ students",
+          "Learning, together"
+        ],
+        [
+          "A clearer path for grievances.",
+          "I built Samadhan Seva, a three-layer AI portal designed to route and verify grievances. The project earned first runner-up at a Replit AI hackathon.",
+          "₹1 lakh",
+          "hackathon prize · first runner-up",
+          "Routing & verification",
+          "samadhan-seva"
+        ],
+        [
+          "Exploring a helpline, one use at a time.",
+          "A pay-per-use AI helpline concept brought product design and business-model thinking together in the Truecaller Microtransaction Challenge.",
+          "National finalist",
+          "Truecaller Microtransaction Challenge",
+          "An idea with a business model",
+          "truecaller-helpline"
+        ]
+      ],
+      "details": [
+        {
+          "title": "Business Technology Club",
+          "items": [
+            "Tech Coordinator: conducted 15+ workshops involving 20+ alumni and engaging 300+ students."
+          ]
+        },
+        {
+          "title": "Product experiments",
+          "items": [
+            "Built Samadhan Seva, a three-layer grievance routing and verification portal; first runner-up at a Replit AI hackathon with a ₹1 lakh prize.",
+            "Built a retrieval-augmented system grounded in official sources, with guardrails to block unsupported answers and send risky cases for review.",
+            "National finalist in the Truecaller Microtransaction Challenge with a pay-per-use AI helpline concept."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle Health",
+      "short": "Oracle",
+      "role": "Senior Member of Technical Staff",
+      "dates": "Apr 2024 – Apr 2026 · Bengaluru",
+      "color": "#b83528",
+      "title": "Making healthcare\neasier to access.",
+      "intro": "Identity and access products for clinician login, hospital onboarding and regulated deployments.",
+      "beats": [
+        [
+          "One login. A simpler way in.",
+          "I helped launch single sign-on for a UK NHS trust, choosing a modular authentication design that could be reused for future integrations.",
+          "One login",
+          "a reusable clinician access journey",
+          "Identity → access"
+        ],
+        [
+          "Better defaults for smaller teams.",
+          "Pilot feedback showed that smaller hospitals needed a simpler way to configure identity policies. I added default workflows that reduced the setup burden.",
+          "23%",
+          "fewer onboarding support requests · 17+ hospitals",
+          "Less setup. More self-service.",
+          "oracle-onboarding"
+        ],
+        [
+          "Useful AI starts with accessible information.",
+          "I built semantic-search infrastructure supporting Oracle Health’s Clinical AI Agent, indexing clinical records for context-aware retrieval.",
+          "27%",
+          "less effort updating and retrieving clinical information",
+          "Connecting information to context"
+        ]
+      ],
+      "details": [
+        {
+          "title": "Product and workflow improvements",
+          "items": [
+            "Launched a modular single sign-on product that enabled Oracle Health access for a UK NHS trust.",
+            "Used pilot feedback to add default identity-policy workflows for smaller hospitals, reaching 17+ hospitals and reducing support requests by 23%.",
+            "Expanded Device Access using customer feedback to simplify staff and device onboarding, access management and administrative workflows.",
+            "Built semantic retrieval infrastructure supporting clinician-facing AI workflows and reduced update/retrieval effort by 27%.",
+            "Used reliability KPIs and service telemetry to identify authorization bottlenecks and prioritize performance improvements across a platform handling more than four million daily requests."
+          ]
+        },
+        {
+          "title": "Design and stakeholder coordination",
+          "items": [
+            "Coordinated four teams on an internal portal connecting users to 12 Oracle Health applications.",
+            "Contributed wireframes, interface decisions, rollout metrics and dependency planning.",
+            "Gathered workflow context through client-success-manager conversations and incorporated feedback into feature decisions.",
+            "Worked across dependent teams to resolve multi-tenant blockers and keep deployments on schedule."
+          ]
+        },
+        {
+          "title": "Delivery and regulated environments",
+          "items": [
+            "Reduced deployment time by 33% by integrating 1,200+ automated tests into the release pipeline.",
+            "Enabled four US federal deployments by translating security and compliance requirements into authentication release requirements.",
+            "Reduced post-release defects by 25% through stronger release gates, expanded testing and structured review of severe incidents.",
+            "Improved reliability by refactoring legacy flows and expanding integration and unit coverage."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mettl",
+      "name": "Mercer | Mettl",
+      "short": "Mettl",
+      "role": "Software Engineer → Senior Software Engineer",
+      "dates": "Sep 2021 – Mar 2024 · Gurugram",
+      "color": "#006d83",
+      "title": "Ready for the\nnext live exam.",
+      "intro": "Infrastructure and workflows behind online proctoring: live video, integrations and operational visibility.",
+      "beats": [
+        [
+          "Keeping the connection through peak demand.",
+          "I rearchitected a WebRTC streaming server for University of São Paulo examinations. In a separate storage initiative, I led three engineers on an EBS-to-EFS migration that reduced costs by 43%.",
+          "40K",
+          "concurrent video requests",
+          "Continuity at scale",
+          "mettl-platform-scaling"
+        ],
+        [
+          "Making setup easier to navigate.",
+          "An AI assistant guided administrators through assessment setup. I also replaced complex hash signing with JWT authentication for more than 200 enterprise clients.",
+          "14%",
+          "higher self-service adoption",
+          "From friction to self-service"
+        ],
+        [
+          "Faster answers when something goes wrong.",
+          "I redesigned the proctoring gateway and built self-service ELK dashboards, giving engineering, product and leadership clearer production visibility.",
+          "43%",
+          "lower live-exam issue-resolution time",
+          "Observe. Understand. Resolve."
+        ]
+      ],
+      "details": [
+        {
+          "title": "Platform reliability and scaling",
+          "items": [
+            "Rearchitected the WebRTC streaming server to handle 40K concurrent video requests.",
+            "Led three engineers through an EBS-to-EFS migration, reducing infrastructure costs by 43%, approximately ₹30 lakh.",
+            "Replaced server-bound storage with a shared file system to support proctoring workloads across servers at peak demand.",
+            "Redesigned the proctoring gateway for faster diagnosis, stronger reliability and privacy-readiness considerations, reducing issue-resolution time by 43%.",
+            "Built REST APIs for microservices on AWS and improved the performance of client-information calls by 33%."
+          ]
+        },
+        {
+          "title": "Self-service and integrations",
+          "items": [
+            "Built an assessment-setup and FAQ assistant that increased self-service adoption by 14%.",
+            "Replaced hash signing with JWT to simplify authentication setup for 200+ enterprise clients.",
+            "Built self-service ELK dashboards for engineering, product and leadership visibility into production incidents."
+          ]
+        },
+        {
+          "title": "Business case and messaging infrastructure",
+          "items": [
+            "Led the team effort around migration from ActiveMQ to Amazon SQS FIFO.",
+            "Built a business case forecasting ₹1.45 crore in annual savings.",
+            "Raised message capacity from 200 to 1,000 messages per second using managed SQS FIFO.",
+            "Owned the migration proof of concept and contributed to the technical evaluation."
+          ]
+        },
+        {
+          "title": "Team contribution and recognition",
+          "items": [
+            "Mentored interns and engineers and performed more than 100 code reviews.",
+            "Progressed from Software Engineer to Senior Software Engineer in approximately 1.7 years, compared with a reported 2.5-year company average.",
+            "Received awards for infrastructure and dashboard work."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "akamai",
+      "name": "Akamai Technologies",
+      "short": "Akamai",
+      "role": "Technical Solutions Engineer Associate",
+      "dates": "Jul 2020 – Aug 2021 · Bengaluru",
+      "color": "#0075aa",
+      "title": "Every stream has\npeople behind it.",
+      "intro": "Customer-facing reliability work across media delivery and cloud-security services.",
+      "beats": [
+        [
+          "The audience experiences the outcome.",
+          "I investigated network and media-delivery problems for more than 20 clients, supporting live-event environments with more than five million concurrent viewers.",
+          "5M+",
+          "concurrent viewers in supported event environments",
+          "From the edge to the audience"
+        ],
+        [
+          "Make the investigation reusable.",
+          "Rebuffering investigations involved repeated log analysis. I built automation that helped engineers spend less time searching and more time diagnosing the issue.",
+          "50%",
+          "less manual investigation effort",
+          "A clearer signal in the logs"
+        ]
+      ],
+      "details": [
+        {
+          "title": "Contributions",
+          "items": [
+            "Supported CDN and media-delivery services for live sports and OTT events.",
+            "Investigated complex delivery and network issues for Indian and international customers.",
+            "Supported premium APAC and EMEA customer escalations.",
+            "Applied DNS and HTTP knowledge to trace media-delivery failures.",
+            "Built log-analysis automation for rebuffering investigations, reducing manual engineer effort by 50%.",
+            "Built Python tools to automate repeated operational tasks.",
+            "Contributed to a reported increase in client satisfaction from 85% to 88% through monitoring, alerts and root-cause communication.",
+            "Received three client accolades for incident support and analysis.",
+            "Ranked as a top performer in the “I am Akamai Ready” programme, completing all ten evaluation presentations on the first attempt; the résumé reports this as one out of 25 joiners."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drdo",
+      "name": "DRDO",
+      "short": "DRDO",
+      "role": "Software Development Intern",
+      "dates": "Dec 2019 – May 2020 · Jodhpur",
+      "color": "#52613b",
+      "title": "Finding signals\nin complex images.",
+      "intro": "Early research projects in computer vision, image intelligence and mapping.",
+      "beats": [
+        [
+          "A better input. A more useful signal.",
+          "I worked on a CNN-based detection model and an eigenvalue-based technique for extracting dominant colors, alongside documentation and release work for two internal products.",
+          "Computer vision",
+          "image processing · dominant-color extraction",
+          "See the information differently",
+          "image-preprocessing"
+        ],
+        [
+          "Maps beyond the network.",
+          "An earlier 2018 DRDO traineeship led to an offline ArcGIS desktop application: tile packages, shapefile layers and coordinate inspection in one focused workflow.",
+          "Offline first",
+          "Java · ArcGIS · 2018 traineeship",
+          "Layers of understanding",
+          "offline-arcgis-map"
+        ]
+      ],
+      "details": [
+        {
+          "title": "Contributions",
+          "items": [
+            "Developed a CNN-based detection model for defense analytics.",
+            "Built an eigenvalue-based dominant-color extraction technique for image-intelligence workflows.",
+            "Contributed to mapping and analytics tools supporting internal decision-making.",
+            "Mentored and coordinated more than three interns, contributing to documentation and release readiness for two internal products."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vit",
+      "name": "Vellore Institute of Technology",
+      "short": "VIT",
+      "role": "B.Tech in Computer Science",
+      "dates": "Jun 2016 – Jun 2020 · Vellore",
+      "color": "#2b5098",
+      "title": "Where the\nfoundation began.",
+      "intro": "Computer science, open-source communities and the first experience of bringing people around an idea.",
+      "beats": [
+        [
+          "Learning to build. Learning to contribute.",
+          "I graduated with a CGPA of 9.01/10 and a ₹1 lakh GVSDP scholarship. Beyond coursework, I contributed to technical communities, outreach and fundraising.",
+          "9.01/10",
+          "CGPA · B.Tech in Computer Science",
+          "A foundation for what came next"
+        ]
+      ],
+      "details": [
+        {
+          "title": "Education and community",
+          "items": [
+            "₹1 lakh GVSDP scholarship, 2016.",
+            "Riviera Sales Coordinator: led 10+ volunteers on participant outreach, 2019.",
+            "HEARTS-VIT core team: supported 2+ fundraising events for underprivileged children, 2018–2019.",
+            "Mozilla Firefox Technical Club: open-source projects and technology workshops, 2017–2018.",
+            "DAV Public School, Kota · Class XII · 91% · 2015–2016."
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "counselmate",
+      "title": "Bringing the court day into one workflow.",
+      "category": "Product building · Legal workflows",
+      "intro": "How interviews with lawyers shaped a product for finding and following court information.",
+      "blocks": [
+        {
+          "title": "Starting with the work people already do",
+          "paragraphs": [
+            "CounselMate began with a workflow problem: lawyers were losing time moving between fragmented sources of court information.",
+            "I interviewed more than 30 lawyers in person to understand where that time went and which problems should shape the first version. The research gave me a basis for prioritizing a focused product, rather than starting with a long list of possible features."
+          ]
+        },
+        {
+          "title": "Bringing the information together",
+          "paragraphs": [
+            "The resulting app combines cause lists, live boards, case details, orders, judgments and real-time alerts in one workflow for Rajasthan High Court lawyers.",
+            "My work connected the research to the build: identifying the useful information, deciding which parts belonged in the MVP and bringing them together into a product people could use through the court day."
+          ]
+        },
+        {
+          "title": "Looking at adoption and time saved",
+          "paragraphs": [
+            "The résumé snapshot reports approximately 300 monthly active users and around 45 minutes saved per user per day. These are reported measures, not a guarantee of savings for every user.",
+            "The important product connection is between the original research and the result: the interviews identified time lost across fragmented sources, and the app addressed that fragmentation through one place to follow relevant information."
+          ]
+        },
+        {
+          "title": "What the case study demonstrates",
+          "paragraphs": [
+            "CounselMate connects customer discovery, MVP prioritization and hands-on execution. It is a practical example of the direction I want to take into product management: understand a specific workflow, choose the useful scope and build around the people doing the work."
+          ]
+        }
+      ],
+      "color": "#186e68",
+      "theme": "legal"
+    },
+    {
+      "id": "samadhan-seva",
+      "title": "Helping a grievance find its next step.",
+      "category": "AI product experiment",
+      "intro": "A hackathon build exploring routing and verification for grievance handling.",
+      "blocks": [
+        {
+          "title": "A problem that needs a useful next action",
+          "paragraphs": [
+            "Samadhan Seva is a three-layer AI portal designed to route and verify grievances. The product focuses on helping a grievance move through a structured process rather than leaving it as an unorganized request."
+          ]
+        },
+        {
+          "title": "Building a demonstrable product",
+          "paragraphs": [
+            "I built the portal for a Replit AI hackathon. The project placed first runner-up and received a ₹1 lakh prize."
+          ]
+        }
+      ],
+      "color": "#3f62b5",
+      "theme": "grievance"
+    },
+    {
+      "id": "truecaller-helpline",
+      "title": "An AI helpline built around individual use.",
+      "category": "Product concept · Business model",
+      "intro": "A national-finalist concept for the Truecaller Microtransaction Challenge.",
+      "blocks": [
+        {
+          "title": "The concept",
+          "paragraphs": [
+            "For the Truecaller Microtransaction Challenge, I designed a pay-per-use AI helpline agent. The idea brought together an interaction model—getting help through an AI helpline—and a pricing model based on individual use."
+          ]
+        },
+        {
+          "title": "The outcome",
+          "paragraphs": [
+            "The entry reached the national finals. The competition provided a setting to develop a product idea with a commercial dimension alongside the technical interaction."
+          ]
+        }
+      ],
+      "color": "#2368b7",
+      "theme": "helpline"
+    },
+    {
+      "id": "oracle-onboarding",
+      "title": "When self-service needs a simpler starting point.",
+      "category": "Enterprise product workflows",
+      "intro": "How hospital feedback changed the way identity policies were configured.",
+      "blocks": [
+        {
+          "title": "The original approach",
+          "paragraphs": [
+            "Hospital IT teams needed to configure identity and access policies for Oracle Health. An API-first setup gave technically equipped teams a flexible way to do that work.",
+            "But the pilot revealed a difference between customer groups. Smaller hospitals did not always have the IT capacity or policy expertise needed to use the full configuration surface."
+          ]
+        },
+        {
+          "title": "Changing the starting point",
+          "paragraphs": [
+            "I used that feedback to add default-policy workflows. The change gave smaller teams a simpler starting point while retaining the broader capability for organizations that needed it.",
+            "This was a product decision about how different users could reach a useful result. More configuration options were not the complete answer; the setup also needed to fit the capabilities of the team using it."
+          ]
+        },
+        {
+          "title": "Following the result",
+          "paragraphs": [
+            "The revised self-service workflow reached more than 17 hospitals, and onboarding support requests fell by 23%.",
+            "The story connects pilot learning to a change in the experience and then to an operational outcome. It is one of the clearest examples of how my engineering work has included product judgment."
+          ]
+        }
+      ],
+      "color": "#b83528",
+      "theme": "access"
+    },
+    {
+      "id": "mettl-platform-scaling",
+      "title": "Making room for the next live exam.",
+      "category": "Platform decisions",
+      "intro": "Video, storage and messaging decisions behind a proctoring platform.",
+      "blocks": [
+        {
+          "title": "Reliability during a live event",
+          "paragraphs": [
+            "An online assessment depends on the systems connecting candidates, proctors and administrators. My work at Mercer Mettl included changes to those systems as the platform supported large, time-sensitive sessions.",
+            "I rearchitected the WebRTC streaming server to handle 40,000 concurrent video requests. The résumé identifies University of São Paulo examinations as one of the high-volume contexts for that work."
+          ]
+        },
+        {
+          "title": "Storage that could scale across servers",
+          "paragraphs": [
+            "In a separate initiative, I led three engineers through a migration from EBS to EFS. Moving from server-bound storage to a shared file system allowed workloads to scale across servers during peak demand.",
+            "The migration reduced infrastructure costs by 43%, approximately ₹30 lakh. That result belongs to the storage initiative; it should not be attributed to the video-server redesign."
+          ]
+        },
+        {
+          "title": "Evaluating the messaging layer",
+          "paragraphs": [
+            "I also worked on migration from ActiveMQ to Amazon SQS FIFO, with message capacity moving from 200 to 1,000 messages per second.",
+            "The business case forecast ₹1.45 crore in annual savings; this is a projected benefit, not a claim of realized savings."
+          ]
+        },
+        {
+          "title": "Connecting decisions to product operations",
+          "paragraphs": [
+            "These projects sit at the intersection of engineering choices and product needs: continuity during exams, capacity for traffic spikes and the cost of operating the platform."
+          ]
+        }
+      ],
+      "color": "#006d83",
+      "theme": "scale"
+    }
+  ]
+}
